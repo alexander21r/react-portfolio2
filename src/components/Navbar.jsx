@@ -46,7 +46,7 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[18px] font-bold cursor-pointer flex ">
               Alexander &nbsp;
-              <span className="sm:block hidden "> | Frontend Developer</span>
+              <span className="xs:block hidden"> | Frontend Developer</span>
             </p>
           </Link>
           <div className="flex justify-center  gap-5">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul className="list-none hidden lg:flex flex-row gap-10">
+        <ul className="list-none hidden 2xl:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -78,7 +78,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="lg:hidden flex flex-1 justify-end items-center">
+        <div className="2xl:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
