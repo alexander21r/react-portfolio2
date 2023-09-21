@@ -27,6 +27,7 @@ import {
   ecommerce,
   gamesportal,
   chatgptclone,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -298,6 +299,10 @@ const projects = [
         name: "Express",
         color: "grey-text-gradient",
       },
+      {
+        name: "Stripe",
+        color: "grey-text-gradient",
+      },
     ],
     image: ecommerce,
     demo: "https://angular-eecommerce.netlify.app/",
@@ -339,6 +344,27 @@ const projects = [
     ],
     image: chatgptclone,
     demo: "https://next-chatgpt-clone-beige.vercel.app/",
+  },
+  {
+    name: "React portfolio",
+    description: "",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    demo: "",
   },
 ];
 

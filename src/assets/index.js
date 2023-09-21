@@ -35,6 +35,7 @@ import huluclone from "./projects/huluclone.png";
 import ecommerce from "./projects/ecommerce.png";
 import gamesportal from "./projects/gamesportal.png";
 import chatgptclone from "./projects/chatgptclone.png";
+import portfolio from "./projects/portfolio.png";
 
 export {
   logo,
@@ -70,4 +71,5 @@ export {
   ecommerce,
   gamesportal,
   chatgptclone,
+  portfolio,
 };
