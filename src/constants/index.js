@@ -28,6 +28,7 @@ import {
   gamesportal,
   chatgptclone,
   portfolio,
+  threads,
 } from "../assets";
 
 export const navLinks = [
@@ -188,39 +189,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Tenzies game",
-    description: "",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-    ],
-    image: tenziesgames,
-    demo: "https://tenziesgame-react.netlify.app/",
-  },
-  {
-    name: "Crypto App",
-    description: "",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-    ],
-    image: cryptoapp,
-    demo: "https://crypto-finder-react.netlify.app/",
-  },
-  {
-    name: "Blog",
+    name: "Chat GPT clone",
     description: "",
     tags: [
       {
@@ -228,16 +197,67 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chatgptclone,
+    demo: "https://next-chatgpt-clone-beige.vercel.app/",
+  },
+  {
+    name: "React portfolio",
+    description: "",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    demo: "",
+  },
+  {
+    name: "Threads clone",
+    description: "",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
         name: "MongoDB",
         color: "pink-text-gradient",
       },
       {
-        name: "CSS",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
+      ,
     ],
-    image: blog,
-    demo: "http://blog-next-js-mongodb.vercel.app/",
+    image: threads,
+    demo: "https://next-threads-clone.vercel.app/",
   },
   {
     name: "Hulu clone",
@@ -308,6 +328,59 @@ const projects = [
     demo: "https://angular-eecommerce.netlify.app/",
   },
   {
+    name: "Blog",
+    description: "",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: blog,
+    demo: "http://blog-next-js-mongodb.vercel.app/",
+  },
+  {
+    name: "Tenzies game",
+    description: "",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: tenziesgames,
+    demo: "https://tenziesgame-react.netlify.app/",
+  },
+  {
+    name: "Crypto App",
+    description: "",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: cryptoapp,
+    demo: "https://crypto-finder-react.netlify.app/",
+  },
+
+  {
     name: "Games Portal",
     description: "",
     tags: [
@@ -323,48 +396,6 @@ const projects = [
     ],
     image: gamesportal,
     demo: "https://angular-games-portal.netlify.app/",
-  },
-  {
-    name: "Chat GPT clone",
-    description: "",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Firebase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: chatgptclone,
-    demo: "https://next-chatgpt-clone-beige.vercel.app/",
-  },
-  {
-    name: "React portfolio",
-    description: "",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Three.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: portfolio,
-    demo: "",
   },
 ];
 
