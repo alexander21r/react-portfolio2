@@ -37,6 +37,7 @@ import gamesportal from "./projects/gamesportal.png";
 import chatgptclone from "./projects/chatgptclone.png";
 import portfolio from "./projects/portfolio.png";
 import threads from "./projects/threads.png";
+import messengerclone from "./projects/messengerclone.png";
 
 export {
   logo,
@@ -74,4 +75,5 @@ export {
   chatgptclone,
   portfolio,
   threads,
+  messengerclone,
 };

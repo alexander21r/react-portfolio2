@@ -29,6 +29,7 @@ import {
   chatgptclone,
   portfolio,
   threads,
+  messengerclone,
 } from "../assets";
 
 export const navLinks = [
@@ -214,6 +215,38 @@ const projects = [
     demo: "https://next-chatgpt-clone-beige.vercel.app/",
   },
   {
+    name: "Messenger clone",
+    description: "",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Pusher",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: messengerclone,
+    demo: "https://next-clone-messenger.vercel.app/",
+  },
+  {
     name: "React portfolio",
     description: "",
     tags: [
@@ -292,6 +325,10 @@ const projects = [
       {
         name: "Express",
         color: "grey-text-gradient",
+      },
+      {
+        name: "Sequelize",
+        color: "pink-text-gradient",
       },
       {
         name: "PostgreSQL",
