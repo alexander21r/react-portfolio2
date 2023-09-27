@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { characteristics } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { alexander } from "../assets";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -52,7 +53,7 @@ const About = () => {
           real-world problems. Let's work together to bring your ideas to life!
         </motion.p>
         <img
-          src="https://media.licdn.com/dms/image/D4D35AQH8y0gMvAanKQ/profile-framedphoto-shrink_400_400/0/1688639198042?e=1695715200&v=beta&t=B_o4lnxffEkmgqDlX9zyfY4eBc5bC-24HhF7HCsz41g"
+          src={alexander}
           className="rounded-full mx-auto h-44 w-44 mt-10 lg:mt-0"
           alt="profile image"
         />

@@ -5,6 +5,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import alexander from "./alexander.jpg";
 
 import css from "./tech/css.png";
 import sass from "./tech/sass.png";
@@ -76,4 +77,5 @@ export {
   portfolio,
   threads,
   messengerclone,
+  alexander,
 };
