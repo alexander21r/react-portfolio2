@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Tilt from "react-tilt";
-
+import axios from "axios";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
 
 const ProjectCard = ({ index, name, description, tags, image, demo }) => {
   return (
@@ -36,9 +35,9 @@ const ProjectCard = ({ index, name, description, tags, image, demo }) => {
       </div>
       <div className=" mt-3 flex flex-wrap gap-2">
         {tags.map((tag) => (
-          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-            #{tag.name}
-          </p>
+          <React.Fragment key={tag && tag.name}>
+            {tag && <p className={`text-[14px] ${tag.color}`}>#{tag.name}</p>}
+          </React.Fragment>
         ))}
       </div>
     </Tilt>
@@ -46,6 +45,20 @@ const ProjectCard = ({ index, name, description, tags, image, demo }) => {
 };
 
 const Works = () => {
+  const [projects, setProjects] = useState([]);
+
+  const getProjects = async () => {
+    const res = await axios(
+      `${import.meta.env.VITE_APP_API_URL || "http://localhost:5000"}/projects`
+    );
+
+    setProjects(res.data);
+  };
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
   return (
     <>
       <div>

@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
-import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import axios from "axios";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -54,6 +52,21 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [experiences, setExperiences] = useState([]);
+
+  const getExperiences = async () => {
+    const res = await axios(
+      `${
+        import.meta.env.VITE_APP_API_URL || "http://localhost:5000"
+      }/experiences`
+    );
+
+    setExperiences(res.data);
+  };
+
+  useEffect(() => {
+    getExperiences();
+  }, []);
   return (
     <>
       <motion.div variants={textVariant()}>
