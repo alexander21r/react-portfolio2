@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo } from "../assets";
 import cv from "../assets/cv.pdf";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Hamburger from "hamburger-react";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -79,13 +80,7 @@ const Navbar = () => {
         </ul>
 
         <div className="2xl:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
-          />
-
+          <Hamburger toggled={toggle} toggle={setToggle} />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
